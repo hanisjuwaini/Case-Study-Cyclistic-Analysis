@@ -161,15 +161,15 @@ I saved all the results in xls. format to create charts on Excel for visualisati
 Starting off with the main information, we have a total of 4,369,136 users, the members dominating with 59.76% (2,611,119) and 40.24% (1,758,017) of casual users. 
 Now let's dive in deeper to see at which months do we get high trips.
 
-
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/6963569c-ae28-4d9a-a3f6-578d6f458e6a)
-
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/d775c7dd-75e8-4b5d-9147-ddf167161fd6)
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/71520635-5010-40b4-9a24-fa100cbda5e2)
 
 From April till July, there is an increase in users, which then declines but remains comparatively higher than previous months. Those months are in the Spring and Summer seasons which make sense 
-for the high numbers given that the weather is favourable for bike riding. The school summer break might be another factor in the peak months (June and July), where more families and kids are out to explore leisurely.
-It's also can be seen that the casual users are prone to using the bikes on weekend, while members are mostly using the bike on weekdays. We could assume that the members are using the bike to commute to their workplace or school, while the casual riders are using it for recreational purpose.
+for the high numbers given that the weather is favourable for bike riding. The school summer break might be another factor in the peak months (June and July), where more families and kids are out
+to explore leisurely.
+It's also can be seen that the casual users are prone to using the bikes on weekend, while members are mostly using the bike on weekdays. We could assume that the members are using the bike to
+commute to their workplace or school, while the casual riders are using it for recreational purpose.
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/79890f9d-1ee9-4948-8bfe-5825f054427e)
 
@@ -179,15 +179,15 @@ Based on the charts above, it is not surprising that members are spending less t
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/ad6672ce-990e-4cd6-9c62-a2c04edbfc7f)
 
- If we look at the peak hour based on the chart above, we can see that the number surges at early in the morning, 6am to 8am where the working hours for most begin. And the following peak hour is between 4pm to 6pm where people are commuting back home.
+If we look at the peak hour based on the chart above, we can see that the number surges at early in the morning, 6am to 8am where the working hours for most business begin. And the following peak hour is between 4pm to 6pm where people are commuting back home.
 
-Now let's see what type of bikes do the user prefer. Based on the chart below, the members choose the classic bike over the electric bikes, with no usage at all for the docked bike. Casual riders also seem to prefer classic bike over the others and electric bike as their second preference.
+Now let's see what type of bikes do the user prefer. Based on the chart below, the members choose the classic bike over the electric bikes, with no usage at all for the docked bike. Casual riders also seem to prefer classic bike over the others and followed by electric bike as their second preference.
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/0ee39120-a103-4614-8669-29e6b74eefb9)
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/9a567249-3293-44ea-9aa8-b4c4bc2da27f)
 
-From the charts below, I see that the famous stations where most people picked up the ride are almost identical, such as DuSable Lake Shore Dr & Monroe St, DuSable Lake Shore Dr & North Blvd, 
+From the charts below, I can see that the famous stations where most people picked up the ride are almost identical, such as DuSable Lake Shore Dr & Monroe St, DuSable Lake Shore Dr & North Blvd, 
 Streeter Dr & Grand and Michigan Ave & Oak St. After further research these stations are apparently along the sea, surrounded by restaurants, pubs, playground and many more. 
 
  
@@ -205,12 +205,12 @@ Annual members are consistently using the bike for a brief period of time while 
 1) Perhaps special package could be made if they are converting to annual member subscription after they hit certain subscriptions.
 2) More offers should be done during the weekend, espicially on the peak hours (4pm-8pm).
 3) Do more promotion during the the spring and summer season.
-4) Create more outdoor ads such as banner or yang berdiri tu to be displayed around the high traffic stations. Other option would be creating more digital marketing to be blasted on the social media. Make sure to highlight the offer and comparing the normal to the subscription price.
+4) Create more outdoor ads such to be displayed at the high traffic stations. Other option would be creating more digital marketing to be blasted on the social media. Make sure to highlight the offer and compare the normal price to the subscription price.
 
 ## Improving the Analysis
 
-To improve this analysis I would be using the median instead of the average, while including the outliers. Perhaps can try to use any statistical test to deal with the data to get more accurate results.
-Tracking the route of the users would definitely give more insights especially to see the difference between casual riders and members.
+To improve this analysis I would be using the median instead of the average, which includes the outliers. Perhaps can try to use any statistical test to deal with the data to get more accurate results.
+Also, tracking the route of the users would definitely give more insights especially to see the difference between casual riders and members.
 
 
 
