@@ -125,17 +125,29 @@ to explore the urban destinations in a leisurely way.
 It's also can be seen that the casual users are prone to using the bikes on weekend, while annual members are mostly using the bike on weekdays. We could assume that the annual members are
 using the bike as their transportation to the workplace or school, while the casual members are using it for sightseeing purpose.
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/bb55e479-4df5-4b03-b6ec-471e3a577273)
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/79890f9d-1ee9-4948-8bfe-5825f054427e)
 
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/b89ad155-fabb-42c7-922d-05465fdfa919)
 
+Based on the charts above, it is not surprising that annual members are spending less time on bike, with an average <15 mins daily, as I assumed that they are using it to commute to their workplace, 
+which is accessible by bikes.
+While casual members are spending almost 2x more than annual for leisure purpose.
 
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/ad6672ce-990e-4cd6-9c62-a2c04edbfc7f)
 
+Plus if we look at the peak hour based on the chart above, we can see that the number surges at early in the morning (7-8am) which the start of office hour. And the next peak hour is between 4-6pm where people are commuting back home.
 
+Now let's see what type of bikes do the user prefer. Based on the chart below, 
 
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/0ee39120-a103-4614-8669-29e6b74eefb9)
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/9a567249-3293-44ea-9aa8-b4c4bc2da27f)
 
  
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/eacacd51-27c8-4443-8788-4c1fdf55f470)
 
 
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/5b3a75b0-a344-4fdf-8c00-98db4b9b1678)
 
 
 
