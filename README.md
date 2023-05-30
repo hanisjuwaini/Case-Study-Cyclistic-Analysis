@@ -116,6 +116,8 @@ Now let's dive in deeper to see at which months do we get high trips.
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/6963569c-ae28-4d9a-a3f6-578d6f458e6a)
 
 
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/71520635-5010-40b4-9a24-fa100cbda5e2)
+
 
 
 
