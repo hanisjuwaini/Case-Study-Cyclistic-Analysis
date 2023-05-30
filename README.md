@@ -57,15 +57,18 @@ The code can be accessed here:
     trip_duration_minute: total duration of the trip in minutes
     start_hour: the starting time of the trip (8:00,9:00,10:00 etc)
 5. I did a run through of the data after the steps above, where I checked for the average of the trip duration.
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/3faccf3a-eb49-4887-96aa-8f3308aa6cf3)
- Then I noticed that the average is 17 minutes, despite the maximum minutes being 34,355 hours which is approximately 23 days. After further checking, there were   
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/24ae38f7-738d-47f3-8171-04b896af9ce3)
+
+ Then I noticed that the average is 17 minutes, despite the maximum minutes being 34,355 minutes which is approximately 23 days. After further checking, there were   
  around 155 rows with the same situations, which the trip duration is more than 1 day. 
- To make the analysis more thourugh, I decided to removed all the trips that are more than 1 day.
+ To make the analysis easier for this case, I decided to removed all the trips that are more than 1 day. The trips could be a result of a system error and such.
  
  ## Data Analyzing
  
- For data analyzing, I used Microsoft SQL for easier process since the dataset is very large,
-
+Now, the data is cleaned and ready to be analyzed more thoroughly. I will continue using **MSSQL** to break down the data into few tables. This will make it easier for me to do the visualisation later on.
+ 
+ I started the analysis by calculating how many users are currently using the apps.
+ 
 
 
 
