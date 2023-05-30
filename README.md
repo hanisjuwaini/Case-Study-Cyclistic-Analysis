@@ -106,7 +106,15 @@ Now, the data is cleaned and ready to be analyzed more thoroughly. I will contin
 
 I saved all the results in xls. format to create charts on Excel for visualisation purpose.
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/38afa351-39ac-488a-9e3e-4a9cffd97912)
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/dc88e990-9595-405c-8ac5-f5d798c12fe5)
+
+
+Starting off with the main information, we have a total of 4,369,136 users, the members dominating with 59.76% (2,611,119) and 40.24% (1,758,017) of casual users. 
+Now let's dive in deeper to see at which months do we get high trips.
+
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/6963569c-ae28-4d9a-a3f6-578d6f458e6a)
+
 
 
 
