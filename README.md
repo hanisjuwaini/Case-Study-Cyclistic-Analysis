@@ -85,7 +85,31 @@ Now, the data is cleaned and ready to be analyzed more thoroughly. I will contin
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/408133c4-4e03-46b9-8ee1-be7abb8dfa2e)
 
-5) 
+5) Calculating the starting hour by users
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/9115c0d8-a745-4ce5-bbb4-8645e90f619f)
+ 
+ 6) To find the famous stations or hotspots 
+ 
+ ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/85008319-20d3-411e-bc85-e699745153c4)
+
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/3ee9dce1-ee4b-4b8e-b124-cdf1b83e84f7)
+
+
+7) Types of bikes used
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/8afb5ee0-bb0c-48a7-9d29-c62bbb49a061)
+
+
+## Data Visualisation
+
+I saved all the results in xls. format to create charts on Excel for visualisation purpose.
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/38afa351-39ac-488a-9e3e-4a9cffd97912)
+
+
+
 
 
 
