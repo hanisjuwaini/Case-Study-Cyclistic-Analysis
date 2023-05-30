@@ -175,20 +175,20 @@ It's also can be seen that the casual users are prone to using the bikes on week
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/b89ad155-fabb-42c7-922d-05465fdfa919)
 
-Based on the charts above, it is not surprising that members are spending less time on bike, with an average of <15 mins daily, as I assumed that they are using it as their transportation to to their workplace which is accessible by bikes. While casual riders are spending almost 2x more than members for leisure purpose.
+Based on the charts above, it is not surprising that members are spending less time on bike, with an average of <15 mins daily, as I assumed that they are using it as their transportation to their workplace which is accessible by bikes. While casual riders are spending almost 2x more than members for leisure purpose. Another note is that whereas casual riders' usage tends to peak on the weekends and decline during the week, members' usage is constant throughout the whole week.
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/ad6672ce-990e-4cd6-9c62-a2c04edbfc7f)
 
-Plus if we look at the peak hour based on the chart above, we can see that the number surges at early in the morning (7-8am) which the start of office hour. And the next peak hour is between 4-6pm where people are commuting back home.
+ If we look at the peak hour based on the chart above, we can see that the number surges at early in the morning, 6am to 8am where the working hours for most begin. And the following peak hour is between 4pm to 6pm where people are commuting back home.
 
-Now let's see what type of bikes do the user prefer. Based on the chart below, 
+Now let's see what type of bikes do the user prefer. Based on the chart below, the members choose the classic bike over the electric bikes, with no usage at all for the docked bike. Casual riders also seem to prefer classic bike over the others and electric bike as their second preference.
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/0ee39120-a103-4614-8669-29e6b74eefb9)
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/9a567249-3293-44ea-9aa8-b4c4bc2da27f)
 
 From the charts below, I see that the famous stations where most people picked up the ride are almost identical, such as DuSable Lake Shore Dr & Monroe St, DuSable Lake Shore Dr & North Blvd, 
-Streeter Dr & Grand Ave etc). After further research these stations are apparently surrounded by the lake view, restaurants, pubs, playground and many more. 
+Streeter Dr & Grand and Michigan Ave & Oak St. After further research these stations are apparently along the sea, surrounded by restaurants, pubs, playground and many more. 
 
  
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/eacacd51-27c8-4443-8788-4c1fdf55f470)
@@ -198,19 +198,19 @@ Streeter Dr & Grand Ave etc). After further research these stations are apparent
 
 ## Summary
 
-As explained, annual members are consistently using the bike for a brief period of time while casual rider spent more time on the ride especially on the weekend, despite using it inconsistently. The summer season has the highest riders meanwhile winter has the least. Both users have different preference of bike type and the starting station, according to their purposes at the moment. We could finally conclude that the casual riders are using the app for recreational purpose while the members use them as their own transportaion.
+Annual members are consistently using the bike for a brief period of time while casual rider spent more time on the ride especially on the weekend, despite using it inconsistently. The summer season has the highest riders meanwhile winter has the least.Also, both users have different preference of bike type according to their purposes at the moment. We could finally conclude that the casual riders are using the app for recreational purpose while the members mostly use them as their own transportation.
 
 
 ## Recommendation
-1) Perhaps special package could be made for hourly or daily subscription for the casual riders. After they hit certain subscriptions, give them a special offer if they are converting to annual member subscription.
-2) More promotion should be done during the weekend, espicially on the peak hours (4pm-8pm).
+1) Perhaps special package could be made if they are converting to annual member subscription after they hit certain subscriptions.
+2) More offers should be done during the weekend, espicially on the peak hours (4pm-8pm).
 3) Do more promotion during the the spring and summer season.
 4) Create more outdoor ads such as banner or yang berdiri tu to be displayed around the high traffic stations. Other option would be creating more digital marketing to be blasted on the social media. Make sure to highlight the offer and comparing the normal to the subscription price.
 
 ## Improving the Analysis
 
-To improve this analysis I would be using the median instead of the average, while including the outliers. Perhaps can try to use any statistical test to deal with the data.
-Tracking the route of the users would definitely give more insights especially to see the difference between casual user and members.
+To improve this analysis I would be using the median instead of the average, while including the outliers. Perhaps can try to use any statistical test to deal with the data to get more accurate results.
+Tracking the route of the users would definitely give more insights especially to see the difference between casual riders and members.
 
 
 
