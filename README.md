@@ -58,8 +58,8 @@ The code can be accessed here:
 5. I did a quick check of the data after the steps above, where I calculated for the average of the trip duration.
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/24ae38f7-738d-47f3-8171-04b896af9ce3)
 
- Then I noticed that the average is 17 minutes, despite the maximum minutes being 34,355 minutes which is approximately 23 days. After further checking, there were   
- around 155 rows with the same situations, which the trip duration is more than 1 day. 
+ Then I noticed that the average is 17 minutes, despite the maximum minutes being 34,355 minutes which is approximately 23 days. After further checking, there were around 155 rows with the same situations,  
+ which the trip duration is more than 1 day. 
  To make the analysis easier for this case, I decided to removed all the trips that are more than 1 day. The trips could be a result of a system error and such.
  
  ## Data Analyzing
@@ -165,17 +165,14 @@ Now let's dive in deeper to see at which months do we get high trips.
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/71520635-5010-40b4-9a24-fa100cbda5e2)
 
-From April till July, there is an increase in users, which then declines but remains comparatively higher than previous months. Those months are in the Spring and Summer seasons which make sense 
-for the high numbers given that the weather is favourable for bike riding. The school summer break might be another factor in the peak months (June and July), where more families and kids are out
-to explore leisurely.
-It's also can be seen that the casual users are prone to using the bikes on weekend, while members are mostly using the bike on weekdays. We could assume that the members are using the bike to
-commute to their workplace or school, while the casual riders are using it for recreational purpose.
+From April till July, there is an increase in users, which then declines but remains comparatively higher than previous months. Those months are in the Spring and Summer seasons which make sense for the high numbers given that the weather is favourable for bike riding. The school summer break might be another factor in the peak months (June and July), where more families and kids are out to explore leisurely.
+It's also can be seen whereas casual riders' usage tends to peak on the weekends and decline during the week, members' usage is constant throughout the whole week. We could assume that the members are using the bike to commute to their workplace or school, while the casual riders are using it for recreational purpose.
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/79890f9d-1ee9-4948-8bfe-5825f054427e)
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/b89ad155-fabb-42c7-922d-05465fdfa919)
 
-Based on the charts above, it is not surprising that members are spending less time on bike, with an average of <15 mins daily, as I assumed that they are using it as their transportation to their workplace which is accessible by bikes. While casual riders are spending almost 2x more than members for leisure purpose. Another note is that whereas casual riders' usage tends to peak on the weekends and decline during the week, members' usage is constant throughout the whole week.
+Based on the charts above, it is not surprising that members are spending less time on bike, with an average of <15 mins daily, as I assumed that they are using it as their transportation to their workplace which is accessible by bikes. While casual riders are spending almost 2x more than members for leisure purpose. 
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/ad6672ce-990e-4cd6-9c62-a2c04edbfc7f)
 
@@ -203,8 +200,8 @@ Annual members are consistently using the bike for a brief period of time while 
 
 ## Recommendation
 1) Perhaps special package could be made if they are converting to annual member subscription after they hit certain subscriptions.
-2) More offers should be done during the weekend, espicially on the peak hours (4pm-8pm).
-3) Do more promotion during the the spring and summer season.
+2) More offers should be done during the weekend, espicially on the peak hours (4pm-8pm). A new package which include only using the bike during weekend could be beneficial.
+3) Do more promotion during the the spring and summer seasons.
 4) Create more outdoor ads such to be displayed at the high traffic stations. Other option would be creating more digital marketing to be blasted on the social media. Make sure to highlight the offer and compare the normal price to the subscription price.
 
 ## Improving the Analysis
