@@ -56,7 +56,7 @@ The code can be accessed here:
     end_day: which days the trip ended at
     trip_duration_minute: total duration of the trip in minutes
     start_hour: the starting time of the trip (8:00,9:00,10:00 etc)
-5. I did a run through of the data after the steps above, where I checked for the average of the trip duration.
+5. I did a quick check of the data after the steps above, where I calculated for the average of the trip duration.
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/24ae38f7-738d-47f3-8171-04b896af9ce3)
 
  Then I noticed that the average is 17 minutes, despite the maximum minutes being 34,355 minutes which is approximately 23 days. After further checking, there were   
@@ -67,7 +67,28 @@ The code can be accessed here:
  
 Now, the data is cleaned and ready to be analyzed more thoroughly. I will continue using **MSSQL** to break down the data into few tables. This will make it easier for me to do the visualisation later on.
  
- I started the analysis by calculating how many users are currently using the apps.
+1) I started the analysis by calculating how many users are currently using the apps.
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/02416869-9e37-4522-a770-90e1d5c3dafd)
+
+2) Then, I did the same calculation to find the number of trips for each months to see the trend in 2022.
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/087480d1-6ed0-46bf-9d43-93f5af844504)
+
+3) Next I calculate the number of trips for each days in a week
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/10402b0b-4403-4fb2-b2ff-49362a6a6543)
+
+4) Then I calculate the average trip duration monthly and daily to get a better understanding
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/e7d50eda-5dd3-479c-aa43-98a638adb3d5)
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/408133c4-4e03-46b9-8ee1-be7abb8dfa2e)
+
+5) 
+
+
+
  
 
 
