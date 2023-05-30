@@ -69,37 +69,87 @@ Now, the data is cleaned and ready to be analyzed more thoroughly. I will contin
  
 1) I started the analysis by calculating how many users are currently using the apps.
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/02416869-9e37-4522-a770-90e1d5c3dafd)
+```
+SELECT member_casual, COUNT(ride_id) AS total_trip
+FROM all_year
+GROUP BY member_casual
+ORDER BY total_trip DESC
+```
 
 2) Then, I did the same calculation to find the number of trips for each months to see the trend in 2022.
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/087480d1-6ed0-46bf-9d43-93f5af844504)
+```
+SELECT member_casual, month, COUNT(ride_id) AS total_trip
+FROM all_year
+GROUP BY member_casual, month
+ORDER BY member_casual, total_trip DESC, month
+
+```
 
 3) Next I calculate the number of trips for each days in a week
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/10402b0b-4403-4fb2-b2ff-49362a6a6543)
+```
+SELECT member_casual, day_of_week, COUNT(ride_id) AS total_trip
+FROM all_year
+GROUP BY member_casual, day_of_week
+ORDER BY member_casual, total_trip DESC, day_of_week
+
+```
 
 4) Then I calculate the average trip duration monthly and daily to get a better understanding
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/e7d50eda-5dd3-479c-aa43-98a638adb3d5)
+```
+SELECT member_casual, month, AVG(ride_length) AS average_trip
+FROM all_year
+GROUP BY member_casual, month
+ORDER BY member_casual,  average_trip DESC, month
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/408133c4-4e03-46b9-8ee1-be7abb8dfa2e)
+```
+```
+
+SELECT member_casual, day_of_week, AVG(ride_length) AS average_trip
+FROM all_year
+GROUP BY member_casual, day_of_week
+ORDER BY member_casual,  average_trip DESC, day_of_week
+
+```
 
 5) Calculating the starting hour by users
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/9115c0d8-a745-4ce5-bbb4-8645e90f619f)
+```
+SELECT member_casual, starting_hour, COUNT(ride_id) as total_trip
+FROM all_year
+GROUP BY member_casual, starting_hour
+ORDER BY member_casual, starting_hour 
+```
+
  
  6) To find the famous stations or hotspots 
  
- ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/85008319-20d3-411e-bc85-e699745153c4)
+ ```
+ SELECT start_station_name, count(*) AS total_user
+FROM all_year
+GROUP BY start_station_name
+ORDER BY  total_user DESC, start_station_name
 
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/3ee9dce1-ee4b-4b8e-b124-cdf1b83e84f7)
+SELECT end_station_name, count(*) AS total_user
+FROM all_year
+GROUP BY end_station_name
+ORDER BY  total_user DESC, end_station_name
+ ```
 
 
 7) Types of bikes used
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/8afb5ee0-bb0c-48a7-9d29-c62bbb49a061)
+```
+
+SELECT rideable_type, member_casual, COUNT(ride_id)
+FROM  all_year
+GROUP BY rideable_type, member_casual
+ORDER BY rideable_type, member_casual
+
+```
 
 
 ## Data Visualisation
@@ -143,11 +193,18 @@ Now let's see what type of bikes do the user prefer. Based on the chart below,
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/9a567249-3293-44ea-9aa8-b4c4bc2da27f)
 
+From the charts below, I see that the famous stations where most people picked up the ride are almost identical, such as DuSable Lake Shore Dr & Monroe St, DuSable Lake Shore Dr & North Blvd, 
+Streeter Dr & Grand Ave etc). After further research these stations are apparently surrounded by the lake view, restaurants, pubs, playground and many more. 
+
  
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/eacacd51-27c8-4443-8788-4c1fdf55f470)
 
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/5b3a75b0-a344-4fdf-8c00-98db4b9b1678)
 
+## Summary
+To conclude there are few key takeaways I get from this analysis:
+
+1) Annual members use
 
 
