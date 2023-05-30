@@ -206,7 +206,7 @@ Annual members are consistently using the bike for a brief period of time while 
 
 ## Improving the Analysis
 
-To improve this analysis I would be using the median instead of the average, which includes the outliers. Perhaps can try to use any statistical test to deal with the data to get more accurate results.
+To improve this analysis I would be using the median instead of the average, which includes the outliers. Perhaps can try to use any statistical test to deal with the data to get more accurate results. 
 Also, tracking the route of the users would definitely give more insights especially to see the difference between casual riders and members.
 
 
