@@ -118,6 +118,16 @@ Now let's dive in deeper to see at which months do we get high trips.
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/71520635-5010-40b4-9a24-fa100cbda5e2)
 
+The users are increasing from April up till July then decreases afterwards but still relatively higher than other months. Those months are in the Spring and Summer seasons which make sense 
+for the high numbers as the weather is suitable for bike riding. Also, the peak months (June, July) are probably because of the school summer break, where more families or childrens are out
+to explore the urban destinations in a leisurely way.
+
+It's also can be seen that the casual users are prone to using the bikes on weekend, while annual members are mostly using the bike on weekdays. We could assume that the annual members are
+using the bike as their transportation to the workplace or school, while the casual members are using it for sightseeing purpose.
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/bb55e479-4df5-4b03-b6ec-471e3a577273)
+
+
 
 
 
