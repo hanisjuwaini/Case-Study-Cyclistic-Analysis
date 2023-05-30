@@ -19,8 +19,9 @@ Three questions to be solved:
 
 ## Data Preparation
 
-The data is a public data obtained from Motivate International Inc. under this licence *https://ride.divvybikes.com/data-license-agreement*
+The data is a public data obtained from Motivate International Inc. under this licence *https://ride.divvybikes.com/data-license-agreement*.
 It is updated on monthly basis by the company itself. Since it is a first-hand collected data, it is considered as credible.
+
 Link to the data: *https://divvy-tripdata.s3.amazonaws.com/index.html*
 
 For the purpose of this analysis, data from **01 January 2022** until **31 December 2022** (12 months) was used.
@@ -51,12 +52,24 @@ The code can be accessed here:
 3. Next, I used the *Trim* function to remove the leading spaces at the beginning and ending of sentences.
 4. I noticed that there a lot of blank cells, hence I filtered and removed all the incomplete data.
 5. Then, I added on new columns:
-- start_day: which days (Monday, Tuesday etc) the ride started at
-- end_day: which days the trip ended at
-- trip_duration_minute: total duration of the trip in minutes
-- start_hour: the starting time of the trip (8:00,9:00,10:00 etc)
+- day_of_week which days (Monday, Tuesday etc) the ride started at
+- ride_length: total duration of the trip in minutes
+- starting_hour: the starting time of the trip (8:00,9:00,10:00 etc)
+```
+-- Formula used to create new info
+UPDATE  all_year
+SET day_of_week = DATENAME(weekday,started_at),
+    month = DATEPART(month,started_at),
+	ride_length = DATEDIFF(minute,started_at,ended_at)
+ 
+```
 6. I did a quick check of the data after the steps above, where I calculated for the average of the trip duration.
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/24ae38f7-738d-47f3-8171-04b896af9ce3)
+
+```
+SELECT MIN(ride_length), MAX(ride_length), AVG(ride_length)
+FROM all_year
+
+```
 
  Then I noticed that the average is 17 minutes, despite the maximum minutes being 34,355 minutes which is approximately 23 days. After further checking, there were around 155 rows with the same situations,  
  which the trip duration is more than 1 day. 
@@ -155,59 +168,64 @@ ORDER BY rideable_type, member_casual
 
 I saved all the results in xls. format to create charts on Excel for visualisation purpose.
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/dc88e990-9595-405c-8ac5-f5d798c12fe5)
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Analysis/assets/87611715/13d099ba-20ba-4dad-a4b7-d44c54535903)
 
 
 Starting off with the main information, we have a total of 4,369,136 users, the members dominating with 59.76% (2,611,119) and 40.24% (1,758,017) of casual users. 
 Now let's dive in deeper to see at which months do we get high trips.
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/d775c7dd-75e8-4b5d-9147-ddf167161fd6)
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Analysis/assets/87611715/b7073e91-bb01-4b24-8b0a-136fbc202825)
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/71520635-5010-40b4-9a24-fa100cbda5e2)
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Analysis/assets/87611715/7927ee71-8593-411d-8439-ab75daad1ac3)
 
-From April till July, there is an increase in users, which then declines but remains comparatively higher than previous months. Those months are in the Spring and Summer seasons which make sense for the high numbers given that the weather is favourable for bike riding. The school summer break might be another factor in the peak months (June and July), where more families and kids are out to explore leisurely.
-It's also can be seen whereas casual riders' usage tends to peak on the weekends and decline during the week, members' usage is constant throughout the whole week. We could assume that the members are using the bike to commute to their workplace or school, while the casual riders are using it for recreational purpose.
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/79890f9d-1ee9-4948-8bfe-5825f054427e)
+From April till July, there is an increase in users, which then declines but remains comparatively higher than previous months. These months correspond to the Spring and Summer seasons, which make sense for the high numbers given that the weather is favourable for bike riding. The school summer break might be another factor in the peak months (June and July), where more families and kids are out to explore leisurely. 
+It's also can be seen whereas casual riders' usage tends to peak on the weekends and decline during the week, members' usage is constant throughout the whole week. We could assume that the members are using the bike to commute to their workplace or school, while the casual riders are using it for recreational activities.
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/b89ad155-fabb-42c7-922d-05465fdfa919)
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Analysis/assets/87611715/51840be2-7030-4777-a4b1-6fc77dc91c6a)
+
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Analysis/assets/87611715/d0219ce1-b5b6-4cc6-b965-4078450e65c8)
+
 
 Based on the charts above, it is not surprising that members are spending less time on bike, with an average of <15 mins daily, as I assumed that they are using it as their transportation to their workplace which is accessible by bikes. While casual riders are spending almost 2x more than members for leisure purpose. 
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/ad6672ce-990e-4cd6-9c62-a2c04edbfc7f)
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Analysis/assets/87611715/68d5e729-8368-4791-98a5-b458b4f26a7f)
 
 If we look at the peak hour based on the chart above, we can see that the number surges at early in the morning, 6am to 8am where the working hours for most business begin. And the following peak hour is between 4pm to 6pm where people are commuting back home.
 
+
 Now let's see what type of bikes do the user prefer. Based on the chart below, the members choose the classic bike over the electric bikes, with no usage at all for the docked bike. Casual riders also seem to prefer classic bike over the others and followed by electric bike as their second preference.
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/0ee39120-a103-4614-8669-29e6b74eefb9)
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Analysis/assets/87611715/0aae549e-8382-411d-a877-6381afbe39a5)
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/9a567249-3293-44ea-9aa8-b4c4bc2da27f)
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Analysis/assets/87611715/adb2a519-3e74-458c-8b82-8f4e0174c59a)
+
 
 From the charts below, I can see that the famous stations where most people picked up the ride are almost identical, such as DuSable Lake Shore Dr & Monroe St, DuSable Lake Shore Dr & North Blvd, 
 Streeter Dr & Grand and Michigan Ave & Oak St. After further research these stations are apparently along the sea, surrounded by restaurants, pubs, playground and many more. 
 
  
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/eacacd51-27c8-4443-8788-4c1fdf55f470)
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Analysis/assets/87611715/d0d2b8c0-2fea-483b-8a8e-58dfa1e8a460)
 
+![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Analysis/assets/87611715/22b8f55d-c76c-4a01-8ddb-470ab796f610)
 
-![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/5b3a75b0-a344-4fdf-8c00-98db4b9b1678)
 
 ## Summary
 
-Annual members are consistently using the bike for a brief period of time while casual rider spent more time on the ride especially on the weekend, despite using it inconsistently. The summer season has the highest riders meanwhile winter has the least.Also, both users have different preference of bike type according to their purposes at the moment. We could finally conclude that the casual riders are using the app for recreational purpose while the members mostly use them as their own transportation.
+- User patterns: Annual members predominantly used the bike sharing app on weekdays, indicating that they primarily utilized the service for their daily commute to work. In contrast, casual users were more likely to use the app during weekends, suggesting a preference for recreational activities. Also, both users have different preference of bike type according to their purposes at the moment.
+- Ride length: Annual members are consistently using the bike for a brief period of time while casual rider spent more time on the ride especially on the weekend, despite only using it occasionally.
+- Seasonal variation: During summer season both members and casual users showed an increase in ride frequency, possibly due to favorable weather conditions.
 
 
 ## Recommendation
-1) Perhaps special package could be made if they are converting to annual member subscription after they hit certain subscriptions.
-2) More offers should be done during the weekend, espicially on the peak hours (4pm-8pm). A new package which include only using the bike during weekend could be beneficial.
-3) Do more promotion during the the spring and summer seasons.
-4) Create more outdoor ads such to be displayed at the high traffic stations. Other option would be creating more digital marketing to be blasted on the social media. Make sure to highlight the offer and compare the normal price to the subscription price.
+1) Create a special package for users who switch to an annual membership subscription after reaching a certain number of rides.
+2) Increase promotional offers specifically for weekends, especially during peak hours from 4pm to 8pm or introduce a new package exclusively for weekend rides.
+3) Focus on increased promotional activities during the spring and summer seasons.
+4) Create more outdoor advertisements at high-traffic stations. Additionally, explore digital marketing strategies on social media platforms, emphasizing the benefits of membership and highlighting the cost savings compared to regular pricing.
 
 ## Improving the Analysis
 
-To improve this analysis I would be using the median instead of the average, which includes the outliers. Perhaps can try to use any statistical test to deal with the data to get more accurate results. 
-Also, tracking the route of the users would definitely give more insights especially to see the difference between casual riders and members.
+To enhance the accuracy of this analysis I would be using the median instead of the average, as it is less affected by outliers. Additionally, employing statistical tests to handle the data can provide more precise results. Furthermore, tracking the route taken by the users would definitely yield valuable insights particularly to see the difference between casual riders and members.
 
 
 
