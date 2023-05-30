@@ -51,11 +51,11 @@ The code can be accessed here:
 3. Next, I used the *Trim* function to remove the leading spaces at the beginning and ending of sentences.
 4. I noticed that there a lot of blank cells, hence I filtered and removed all the incomplete data.
 5. Then, I added on new columns:
-    start_day: which days (Monday, Tuesday etc) the ride started at
-    end_day: which days the trip ended at
-    trip_duration_minute: total duration of the trip in minutes
-    start_hour: the starting time of the trip (8:00,9:00,10:00 etc)
-5. I did a quick check of the data after the steps above, where I calculated for the average of the trip duration.
+- start_day: which days (Monday, Tuesday etc) the ride started at
+- end_day: which days the trip ended at
+- trip_duration_minute: total duration of the trip in minutes
+- start_hour: the starting time of the trip (8:00,9:00,10:00 etc)
+6. I did a quick check of the data after the steps above, where I calculated for the average of the trip duration.
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/24ae38f7-738d-47f3-8171-04b896af9ce3)
 
  Then I noticed that the average is 17 minutes, despite the maximum minutes being 34,355 minutes which is approximately 23 days. After further checking, there were around 155 rows with the same situations,  
