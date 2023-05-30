@@ -3,8 +3,7 @@ A case study that is included in Google Data Analytics Certificate.
 
 ## Introduction
 
-Cyclistic is a bike-share company in Chicago that has been launched since 2016. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and
-returned to any other station in the system anytime.
+Cyclistic is a bike-share company in Chicago that has been launched since 2016. Since then, the program has grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system anytime.
 
 Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members.
 
@@ -67,7 +66,7 @@ The code can be accessed here:
  
 Now, the data is cleaned and ready to be analyzed more thoroughly. I will continue using **MSSQL** to break down the data into few tables. This will make it easier for me to do the visualisation later on.
  
-1) I started the analysis by calculating how many users are currently using the apps.
+I started the analysis by calculating how many users are currently using the apps.
 
 ```
 SELECT member_casual, COUNT(ride_id) AS total_trip
@@ -76,7 +75,7 @@ GROUP BY member_casual
 ORDER BY total_trip DESC
 ```
 
-2) Then, I did the same calculation to find the number of trips for each months to see the trend in 2022.
+Then, I did the same calculation to find the number of trips for each months to see the trend in 2022.
 
 ```
 SELECT member_casual, month, COUNT(ride_id) AS total_trip
@@ -86,7 +85,7 @@ ORDER BY member_casual, total_trip DESC, month
 
 ```
 
-3) Next I calculate the number of trips for each days in a week
+Next, I calculated the number of trips for each days in a week
 
 ```
 SELECT member_casual, day_of_week, COUNT(ride_id) AS total_trip
@@ -96,7 +95,7 @@ ORDER BY member_casual, total_trip DESC, day_of_week
 
 ```
 
-4) Then I calculate the average trip duration monthly and daily to get a better understanding
+Then I calculated the average trip duration for the monthly and daily data.
 
 ```
 SELECT member_casual, month, AVG(ride_length) AS average_trip
@@ -114,7 +113,7 @@ ORDER BY member_casual,  average_trip DESC, day_of_week
 
 ```
 
-5) Calculating the starting hour by users
+To find the peak hours, I create a new table focusing on the starting hour column.
 
 ```
 SELECT member_casual, starting_hour, COUNT(ride_id) as total_trip
@@ -124,7 +123,7 @@ ORDER BY member_casual, starting_hour
 ```
 
  
- 6) To find the famous stations or hotspots 
+Then I created two tables, one for the start station, where the users picked up the bike and another is  for the stations where they returned the bike.
  
  ```
  SELECT start_station_name, count(*) AS total_user
@@ -140,7 +139,7 @@ ORDER BY  total_user DESC, end_station_name
  ```
 
 
-7) Types of bikes used
+Lastly I created a table to see if the users have any preferences on the bike type.
 
 ```
 
@@ -168,20 +167,15 @@ Now let's dive in deeper to see at which months do we get high trips.
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/71520635-5010-40b4-9a24-fa100cbda5e2)
 
-The users are increasing from April up till July then decreases afterwards but still relatively higher than other months. Those months are in the Spring and Summer seasons which make sense 
-for the high numbers as the weather is suitable for bike riding. Also, the peak months (June, July) are probably because of the school summer break, where more families or childrens are out
-to explore the urban destinations in a leisurely way.
-
-It's also can be seen that the casual users are prone to using the bikes on weekend, while annual members are mostly using the bike on weekdays. We could assume that the annual members are
-using the bike as their transportation to the workplace or school, while the casual members are using it for sightseeing purpose.
+From April till July, there is an increase in users, which then declines but remains comparatively higher than previous months. Those months are in the Spring and Summer seasons which make sense 
+for the high numbers given that the weather is favourable for bike riding. The school summer break might be another factor in the peak months (June and July), where more families and kids are out to explore leisurely.
+It's also can be seen that the casual users are prone to using the bikes on weekend, while members are mostly using the bike on weekdays. We could assume that the members are using the bike to commute to their workplace or school, while the casual riders are using it for recreational purpose.
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/79890f9d-1ee9-4948-8bfe-5825f054427e)
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/b89ad155-fabb-42c7-922d-05465fdfa919)
 
-Based on the charts above, it is not surprising that annual members are spending less time on bike, with an average <15 mins daily, as I assumed that they are using it to commute to their workplace, 
-which is accessible by bikes.
-While casual members are spending almost 2x more than annual for leisure purpose.
+Based on the charts above, it is not surprising that members are spending less time on bike, with an average of <15 mins daily, as I assumed that they are using it as their transportation to to their workplace which is accessible by bikes. While casual riders are spending almost 2x more than members for leisure purpose.
 
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/ad6672ce-990e-4cd6-9c62-a2c04edbfc7f)
 
@@ -203,8 +197,20 @@ Streeter Dr & Grand Ave etc). After further research these stations are apparent
 ![image](https://github.com/hanisjuwaini/Case-Study-Cyclistic-Bike-Share-Analysis/assets/87611715/5b3a75b0-a344-4fdf-8c00-98db4b9b1678)
 
 ## Summary
-To conclude there are few key takeaways I get from this analysis:
 
-1) Annual members use
+As explained, annual members are consistently using the bike for a brief period of time while casual rider spent more time on the ride especially on the weekend, despite using it inconsistently. The summer season has the highest riders meanwhile winter has the least. Both users have different preference of bike type and the starting station, according to their purposes at the moment. We could finally conclude that the casual riders are using the app for recreational purpose while the members use them as their own transportaion.
+
+
+## Recommendation
+1) Perhaps special package could be made for hourly or daily subscription for the casual riders. After they hit certain subscriptions, give them a special offer if they are converting to annual member subscription.
+2) More promotion should be done during the weekend, espicially on the peak hours (4pm-8pm).
+3) Do more promotion during the the spring and summer season.
+4) Create more outdoor ads such as banner or yang berdiri tu to be displayed around the high traffic stations. Other option would be creating more digital marketing to be blasted on the social media. Make sure to highlight the offer and comparing the normal to the subscription price.
+
+## Improving the Analysis
+
+To improve this analysis I would be using the median instead of the average, while including the outliers. Perhaps can try to use any statistical test to deal with the data.
+Tracking the route of the users would definitely give more insights especially to see the difference between casual user and members.
+
 
 
