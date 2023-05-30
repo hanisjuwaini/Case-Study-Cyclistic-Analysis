@@ -7,7 +7,7 @@ Cyclistic is a bike-share company in Chicago that has been launched since 2016. 
 
 Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members.
 
-The marketing team is trying to maximize the number of annual memberships. Hence, an analysis needs to be done to understand how the annual members and casual members use Cyclistic bikes differently so that recommendation could be done to convert the casual riders into annual members. As a junior data analyst in their company, I am responsible to derive insights, and to come up with solutions to this problem. 
+The marketing team is trying to maximize the number of annual memberships. Hence, an analysis needs to be done to understand how the members and casual riders use Cyclistic bikes differently so that recommendation could be done to convert the casual riders into annual members. As a junior data analyst in their company, I am responsible to derive insights, and to come up with solutions to this problem. 
 
 ## Business Task
 
